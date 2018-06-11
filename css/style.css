@@ -1,0 +1,87 @@
+.visually-hidden {
+	display: none;
+}
+
+.wrapper {
+	width: 90vh;
+	height: 90vh;
+	margin: auto;
+	margin-top: 1%;
+	perspective: 1000px;
+
+}
+
+.board {
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	background-color: #ecd3bc;
+	box-shadow:
+		0 0 0 2px #753917,
+		0 0 0 10px #542d0e,
+		3px 5px 0 15px #332d0e,
+		5px 5px 6px 16px #332d0e;
+	transform: 
+		rotateX(20deg) 
+		rotateY(5deg) 
+		rotateZ(4deg);
+}
+
+.brown {
+	width: 12.5%;
+	height: 12.5%;
+	float: left;
+	background-color: #8B4513;
+	margin-right: 12.5%;
+	padding: 0;
+}
+
+.string-7,
+.string-5,
+.string-3,
+.string-1{
+	margin-left: 12.5%;
+	margin-right: 0;
+}
+
+.string-8::after,
+.string-7::after,
+.string-6::after	{
+	content: "";
+	display: block;
+	width: 37.5%;
+	height: 37.5%;
+	margin: auto;
+	margin-top:  25%;
+	background-color: #000000;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 1px #ffffff,
+		0 0 0 7px #222222,
+		0 0 0 8px #ffffff,
+		0 0 0 10px #000000,
+		2px 4px 0px 11px #000000,
+		3px 4px 0 11px #000000,
+		0 0 0 12px #000000;
+}
+
+.string-3::after,
+.string-2::after,
+.string-1::after	{
+	content: "";
+	display: block;
+	width: 37.5%;
+	height: 37.5%;
+	margin: auto;
+	margin-top:  25%;
+	background-color: #ffffff;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 1px #000000,
+		0 0 0 7px #dddddd,
+		0 0 0 8px #000000,
+		0 0 0 10px #ffffff,
+		2px 3px 0px 11px #ffffff,
+		3px 4px 0 11px #000000,
+		0 0 0 12px #ffffff;
+}
